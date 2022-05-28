@@ -47,3 +47,26 @@ a{
     color: rgb(0,9,12);
     transition: 0.2s linear;
 }
+
+a:hover{
+    color: #598392;
+}
+
+@media (orientation: portrait){
+    section{
+        width: 80%;
+        height: 80%;
+        top: 10%;
+        right: 10%;
+
+    }   
+}
+
+@media(max-width: 1024px) and (orientation: landscape){
+    section{
+        width: 80%;
+        height: 80%;
+        top: 10%;
+        right: 10%;
+    }  
+}
