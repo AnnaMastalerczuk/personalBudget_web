@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dodaj przychód</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="incomes.css">
+</head>
+
+<body>
+    <main>
+        <form action="">
+            <h3>Dodaj przychód</h3>
+            <div class="simpleForm">
+                <label for="amount">Podaj kwotę:</label>
+                <input type="number" placeholder="Kwota" id="amount" required>
+            </div>
+            <div class="simpleForm">
+                <label for="date">Podaj date:</label>
+                <input type="date" id="date" required>
+            </div>
+            <div class="radioForm">
+                <p>Wybierz kategorię:</p>
+                <div>
+                    <input type="radio" name="category" id="salary" value="salary" checked>
+                    <label for="salary">Wynagrodzenie</label>
+                </div>
+                <div>
+                    <input type="radio" name="category" id="interest" value="interest">
+                    <label for="interest">Odsetki bankowe</label>
+                </div>
+                <div>
+                    <input type="radio" name="category" id="sale" value="sale">
+                    <label for="sale">Sprzedaż na Allegro</label>
+                </div>
+                <div>
+                    <input type="radio" name="category" id="other" value="other">
+                    <label for="other">Inne</label>
+                </div>
+            </div>
+            <div class="comment">
+                <label for="comment">Komentarz:</label>
+                <textarea name="comment" id="comment" cols="5" rows="2"></textarea>
+            </div>
+            <div class=buttons>
+                <button>Dodaj</button>
+                <button type="button"><a href="mainmenu.html">Anuluj</a></button>
+            </div>
+        </form>
+    </main>
+
+</body>
+
+</html>
