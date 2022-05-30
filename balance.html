@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bilans</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="balance.css">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+</head>
+
+<body>
+    <section class="title-date">
+        <h1>Sprawdź bilans swoich przychodów i wydatków</h1>
+        <div class="wrap">
+            <div class="dropdown">
+                <button class="dropbtn">Wybierz zakres dat</button>
+                <div class="dropdown-content">
+                    <p>Bieżący miesiąc</p>
+                    <p>Poprzedni miesiąc</p>
+                    <p>Bieżący rok</p>
+                    <button class="datebtn">Niestandardowy</button>
+                </div>
+                <div class="dropdown-date">
+                    <div>
+                        <label for="start-date">Podaj datę początkową:</label>
+                        <input type="date" id="start-date">
+                    </div>
+                    <div>
+                        <label for="end-date">Podaj datę końcową:</label>
+                        <input type="date" id="start-date">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="balance">
+        <p>Suma przychodów: <span>0.00</span></p>
+        <p>Suma wydatków: <span>0.00</span></p>
+        <p class="statement">Gratulacje. Świetnie zarządzasz finansami!</p>
+        <p class="statement">Uważaj, wpadasz w długi!</p>
+    </section>
+    <section class="section-table">
+        <div class="table">
+            <h2>Bilans przychodów</h2>
+            <table>
+                <thead>
+                    <th>Kategoria</th>
+                    <th>Suma</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Wynagrodzenie</td>
+                        <td>0.00</td>
+                    </tr>
+                    <tr>
+                        <td>Odsetki bankowe</td>
+                        <td>0.00</td>
+                    </tr>
+                    <tr>
+                        <td>Sprzedaż na Allegro</td>
+                        <td>0.00</td>
+                    </tr>
+                    <tr>
+                        <td>Inne</td>
+                        <td>0.00</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td>Suma</td>
+                        <td>0.00</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+        <div class="diagram">
+            <h2>Diagram przychodów</h2>
+            <div id="piechart"></div>
+        </div>
+    </section>
+    <section class="section-table">
+        <div class="table">
+
+            <h2>Bilans wydatków</h2>
+            <table>
+                <thead>
+                    <th>Kategoria</th>
+                    <th>Suma</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Jedzenie</td>
+                        <td>0.00</td>
+                    </tr>
+                    <tr>
+                        <td>Mieszkanie</td>
+                        <td>0.00</td>
+                    </tr>
+                    <tr>
+                        <td>Transport</td>
+                        <td>0.00</td>
+                    </tr>
+                    <tr>
+                        <td>Telekomunikacja</td>
+                        <td>0.00</td>
+                    </tr>
+                    <tr>
+                        <td>Opieka zdrowotna</td>
+                        <td>0.00</td>
+                    </tr>
+                    <tr>
+                        <td>Ubrania</td>
+                        <td>0.00</td>
+                    </tr>
+                    <tr>
+                        <td>Higiena</td>
+                        <td>0.00</td>
+                    </tr>
+                    <tr>
+                        <td>Dzieci</td>
+                        <td>0.00</td>
+                    </tr>
+                    <tr>
+                        <td>Rozrywka</td>
+                        <td>0.00</td>
+                    </tr>
+                    <tr>
+                        <td>Wycieczka</td>
+                        <td>0.00</td>
+                    </tr>
+                    <tr>
+                        <td>Szkolenia</td>
+                        <td>0.00</td>
+                    </tr>
+                    <tr>
+                        <td>Książki</td>
+                        <td>0.00</td>
+                    </tr>
+                    <tr>
+                        <td>Oszczędności</td>
+                        <td>0.00</td>
+                    </tr>
+                    <tr>
+                        <td>Emerytura</td>
+                        <td>0.00</td>
+                    </tr>
+                    <tr>
+                        <td>Spłata długów</td>
+                        <td>0.00</td>
+                    </tr>
+                    <tr>
+                        <td>Darowizna</td>
+                        <td>0.00</td>
+                    </tr>
+                    <tr>
+                        <td>Inne wydatki</td>
+                        <td>0.00</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td>Suma</td>
+                        <td>0.00</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+        <div class="diagram">
+            <h2>Diagram wydatków</h2>
+            <div id="piechart"></div>
+        </div>
+    </section>
+
+
+</body>
+
+</html>
