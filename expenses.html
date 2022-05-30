@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dodaj wydatek</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="expenses.css">
+</head>
+<body>
+    <main>
+        <form action="">
+            <h3>Dodaj wydatek</h3>
+            <div>
+                <label for="amount">Podaj kwotę:</label>
+                <input type="text" placeholder="Kwota" id="amount" required>
+            </div>
+            <div>
+                <label for="payment">Wybierz sposób płatności:</label>
+                <select name="payment" id="payment">                   
+                    <option value="cash">Gotówka</option>
+                    <option value="debit-card">Karta debetowa</option>
+                    <option value="credit-card">Karta kredytowa</option>
+                </select>
+
+            </div>
+            <div>
+                <label for="category">Wybierz kategorię:</label>
+                <select name="category" id="category">                   
+                    <option value="food">Jedzenie</option>
+                    <option value="house">Mieszkanie</option>
+                    <option value="transport">Transport</option>
+                    <option value="telecommunication">Telekomunikacja</option>
+                    <option value="healthcare">Opieka zdrowotna</option>
+                    <option value="clothes">Ubranie</option>
+                    <option value="hygiene">Higienia</option>
+                    <option value="children">Dzieci</option>
+                    <option value="entertainment">Rozrywka</option>
+                    <option value="trip">Wycieczka</option>
+                    <option value="training">Szkolenia</option>
+                    <option value="books">Książki</option>
+                    <option value="savings">Oszczędności</option>
+                    <option value="pension">Emerytura</option>
+                    <option value="repayment">Spłata długów</option>
+                    <option value="grant">Darowizna</option>
+                    <option value="other">Inne wydatki</option>
+                </select>
+            </div>
+            <div class="comment">
+                <label for="comment">Komentarz:</label>
+                <textarea name="comment" id="comment" cols="5" rows="2"></textarea>
+            </div>
+            <div class=buttons>
+                <button>Dodaj</button>
+                <button type="button"><a href="mainmenu.html">Anuluj</a></button>
+            </div>
+        </form>
+    </main>
+    
+</body>
+</html>
