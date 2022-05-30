@@ -8,7 +8,6 @@
     <title>Bilans</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="balance.css">
-    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 </head>
 
 <body>
@@ -30,7 +29,7 @@
                     </div>
                     <div>
                         <label for="end-date">Podaj datę końcową:</label>
-                        <input type="date" id="start-date">
+                        <input type="date" id="end-date">
                     </div>
                 </div>
             </div>
@@ -46,10 +45,7 @@
         <div class="table">
             <h2>Bilans przychodów</h2>
             <table>
-                <thead>
-                    <th>Kategoria</th>
-                    <th>Suma</th>
-                </thead>
+                <thead><th>Kategoria</th><th>Suma</th></thead>
                 <tbody>
                     <tr>
                         <td>Wynagrodzenie</td>
@@ -78,7 +74,7 @@
         </div>
         <div class="diagram">
             <h2>Diagram przychodów</h2>
-            <div id="piechart"></div>
+            <div class="piechart"></div>
         </div>
     </section>
     <section class="section-table">
@@ -86,8 +82,7 @@
 
             <h2>Bilans wydatków</h2>
             <table>
-                <thead>
-                    <th>Kategoria</th>
+                <thead><th>Kategoria</th>
                     <th>Suma</th>
                 </thead>
                 <tbody>
@@ -170,7 +165,7 @@
         </div>
         <div class="diagram">
             <h2>Diagram wydatków</h2>
-            <div id="piechart"></div>
+            <div class="piechart"></div>
         </div>
     </section>
 
