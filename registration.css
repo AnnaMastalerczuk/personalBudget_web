@@ -12,3 +12,7 @@ button.btn-outline-dark:hover{
     background-color: var(--backgroundColor);
     border-color: var(--backgroundColor);
 }
+
+h1{
+    letter-spacing: 0.2em;    
+}
