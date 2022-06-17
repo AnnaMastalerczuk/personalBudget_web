@@ -19,20 +19,42 @@
             <div class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle text-light fs-5" href="#" id="navbarDropdown" role="button"
                     data-bs-toggle="dropdown" aria-expanded="false">Wybierz zakres dat</a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <ul class="dropdown-menu bg-light" aria-labelledby="navbarDropdown">
                     <li><a class="dropdown-item" href="#">Bieżący miesiąc</a></li>
                     <li><a class="dropdown-item" href="#">Poprzedni miesiąc</a></li>
                     <li><a class="dropdown-item" href="#">Bieżący rok</a></li>
-                    <li><a class="dropdown-item" href="#">Niestandardowy</a></li>
+                    <!-- Button trigger modal -->
+                    <li><button type="button" class="btn btn-light" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">Niestandardowy</button></li>
                 </ul>
-                <div class="dropdown-date">
-                    <div>
-                        <label for="start-date">Podaj datę początkową:</label>
-                        <input type="date" id="start-date">
-                    </div>
-                    <div>
-                        <label for="end-date">Podaj datę końcową:</label>
-                        <input type="date" id="end-date">
+
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title display-6 fs-4" id="exampleModalLabel">Podaj datę początkową i
+                                    końcową:</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div>
+                                    <label class="form-label" for="start-date">Podaj datę początkową:</label>
+                                    <input class="form-control" type="date" id="start-date">
+                                </div>
+                                <div class="mt-3">
+                                    <label class="form-label" for="end-date">Podaj datę końcową:</label>
+                                    <input class="form-control" type="date" id="end-date">
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-outline-secondary"
+                                    data-bs-dismiss="modal">Anuluj</button>
+                                <button type="button" class="btn btn-outline-dark">Zapisz</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -178,7 +200,8 @@
                 </div>
                 <div class="col-md-6 diagram bg-light mb-3">
                     <h2 class="display-6">Diagram wydatków</h2>
-                    <div class="piechart m-3"><img src="img/markus-spiske-jgOkEjVw-KM-unsplash.jpg" class="img-fluid" alt=""></div>
+                    <div class="piechart m-3"><img src="img/markus-spiske-jgOkEjVw-KM-unsplash.jpg" class="img-fluid"
+                            alt=""></div>
                 </div>
             </div>
         </div>
